@@ -133,6 +133,8 @@ window.onload = () => {
                 line.push(AUTHORS[v]);
             } else if (c == "cp") {
                 line.push((v == 1) ? true : false);
+            } else if ((c == "notes") || (c == "site")) {
+                line.push(`"${v} "`);
             } else {
                 line.push(v);
             }
