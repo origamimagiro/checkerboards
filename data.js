@@ -18,7 +18,7 @@ export const AUTHORS = {
     ville: "Hubert VILLENEUVE",
     tanak: "Masashi TANAKA",
      mosa: "@mosa_mosa_8823",
-    isaac: "Demaine et al.",
+    isaac: "Erik DEMAINE et al.",
 };
 
 export const COLS = ["cp", "size", "type", "author", "year", "#", "efficiency", "site", "link", "notes"];
