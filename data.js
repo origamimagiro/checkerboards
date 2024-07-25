@@ -19,9 +19,9 @@ export const AUTHORS = {
     tanak: "Masashi TANAKA",
      mosa: "@mosa_mosa_8823",
     isaac: "Erik DEMAINE et al.",
-    tahir: "Hadi Tahir",
-     miwu: "Mi Wu",
-    kucha: "Mai Mingliang",
+    tahir: "Hadi TAHIR",
+     miwu: "Mi WU",
+    kucha: "Mingliang MAI",
 };
 
 export const COLS = ["cp", "size", "type", "author", "year", "#", "efficiency", "site", "link", "notes"];
