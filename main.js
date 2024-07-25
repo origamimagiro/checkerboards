@@ -33,6 +33,8 @@ const type_cmp = {
 };
 
 window.onload = () => {
+    const mail = document.getElementById("mail");
+    mail.setAttribute("href", "mailto:checkerb" + "oards@m" + "it.e" + "du");
     const COLI = {};
     for (let i = 0; i < COLS.length; ++i) { COLI[COLS[i]] = i; }
     const main = document.getElementById("main");
