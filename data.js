@@ -18,6 +18,7 @@ export const AUTHORS = {
     ville: "Hubert VILLENEUVE",
     tanak: "Masashi TANAKA",
      mosa: "@mosa_mosa_8823",
+    isaac: "Demaine et al.",
 };
 
 export const COLS = ["cp", "grid", "type", "author", "year", "#", "efficiency", "notes"];
@@ -92,11 +93,30 @@ export const D = [
     [0, 5,  "seamless", "montr", 2009, 1, "5/15", BUDAI],
     [0, 6,     "fuzzy", "montr", 2009, 1, "6/24", BUDAI],
     [0, 7,     "fuzzy", "montr", 2009, 1, "7/27", BUDAI],
+    [0, 2,  "seamless", "isaac", 2009, 1, "2/3",
+        `<a href="https://erikdemaine.org/papers/Checkerboard_ISAAC2009/paper.pdf">ISAAC2009</a>`],
+    [0, 3,  "seamless", "isaac", 2009, 1, "3/5",
+        `<a href="https://erikdemaine.org/papers/Checkerboard_ISAAC2009/paper.pdf">ISAAC2009</a>`],
+    [0, 4,  "seamless", "isaac", 2009, 1, "4/10",
+        `<a href="https://erikdemaine.org/papers/Checkerboard_ISAAC2009/paper.pdf">ISAAC2009</a>`],
 ];
+
+// ISAAC general seamless construction
+// const isaac_side1 = (n) => (n*n + 8*n - 10)/2;
+// for (let n = 2; n <= 20; n += 2) {
+//     D.push([0, n, "fuzzy", "isaac", 2009, 1, `${n}/${isaac_side1(n)}`,
+//         `<a href="https://erikdemaine.org/papers/Checkerboard_ISAAC2009/paper.pdf">ISAAC2009</a>`],);
+// }
+const isaac_side2 = (n) => n*n/4 + 4*n + 4 - 5/2*(n%4);
+for (let n = 2; n <= 20; n += 2) {
+    D.push([0, n, "seamless", "isaac", 2009, 1, `${n}/${isaac_side2(n)}`,
+        `<a href="https://erikdemaine.org/papers/Checkerboard_ISAAC2009/paper.pdf">ISAAC2009</a>`],);
+}
+
 /* Efficiency encoding
- * (a+b2r)/(c+d2r)
- * a or b required
- * b, c, d are integers
+ * (a+brc)/(d+e2f) = (a + b**(1/c))/(d + e**(1/f))
+ * a or (c) required
+ * b, c, d, e, f are integers
  * a may be integer or float
  * parentheses are optional
  * if no "/" present, then only a, interpret as floating point efficiency
