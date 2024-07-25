@@ -1,0 +1,58 @@
+{
+  "file_spec": 1.1,
+  "file_creator": "flat-folder",
+  "file_title": "000_brown_2x2_A1_cp",
+  "file_classes": [
+    "singleModel"
+  ],
+  "vertices_coords": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      1
+    ]
+  ],
+  "edges_vertices": [
+    [
+      0,
+      2
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      0,
+      1
+    ]
+  ],
+  "edges_assignment": [
+    "B",
+    "B",
+    "B",
+    "B"
+  ],
+  "faces_vertices": [
+    [
+      0,
+      2,
+      3,
+      1
+    ]
+  ]
+}
