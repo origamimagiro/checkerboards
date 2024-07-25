@@ -4,7 +4,7 @@ export const AUTHORS = {
     brown: "Daniel BROWN",
     bchan: "Brian CHAN",
     hulme: "Max HULME",
-    casey: "Stephen CASEY",
+    casey: "Steven CASEY",
     montr: "John MONTROLL",
     birke: "Hans BIRKELAND",
     kirsc: "Marc KIRSCHENBAUM",
