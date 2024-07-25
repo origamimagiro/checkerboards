@@ -17,7 +17,7 @@ const parse_efficiency = (s) => {
         const C = a.split("+");
         let v = 0;
         for (const c of C) {
-            const B = c.split("√");
+            const B = c.split("r");
             if (B.length == 1) { v += +c; }
             else { v += ((B[0] == "") ? 1 : (+B[0]))*(B[1]**0.5); }
         }
@@ -43,13 +43,14 @@ window.onload = () => {
     table.setAttribute("width", "100%");
     const header_row = append("tr", table);
     for (const c of COLS) {
+        if ((c == "site") || (c == "link")) { continue; }
         const td = append("th", header_row, true);
         td.style.background = "lightgray";
         td.innerHTML = c;
     }
     D.sort((a, b) => {
-        const ag = a[COLI.grid];
-        const bg = b[COLI.grid];
+        const ag = a[COLI.size];
+        const bg = b[COLI.size];
         if (ag != bg) { return ag - bg; }
         const ae = parse_efficiency(a[COLI.efficiency]);
         const be = parse_efficiency(b[COLI.efficiency]);
@@ -67,35 +68,42 @@ window.onload = () => {
         const row = append("tr", table);
         const line = {};
         for (const c of COLS) { line[c] = A[COLI[c]]; }
-        const k = `${line.grid},${line.type}`;
+        const k = `${line.size},${line.type}`;
         const e = best.get(k) ?? line.efficiency;
         if (e == line.efficiency) {
             best.set(k, i);
-            if (line.type == "seamless") { best.set(`${line.grid},fuzzy`, i); }
-            if (line.type == "fippable") { best.set(`${line.grid},fuzzy`, i); }
+            if (line.type == "seamless") { best.set(`${line.size},fuzzy`, i); }
+            if (line.type == "fippable") { best.set(`${line.size},fuzzy`, i); }
         }
         for (const c of COLS) {
+            if ((c == "site") || (c == "link")) { continue; }
             const td = append("td", row, true);
             const val = line[c];
             if (c == "cp") {
                 if (val != 0) {
                     const a = append("a", td);
                     a.setAttribute("href", `./fold/${
-                        line.grid  }x${
-                        line.grid  }_${
+                        line.size  }x${
+                        line.size  }_${
                         line.type  }_${
                         line.author}_${
                         line.year  }_${
                         line["#"]  }.fold`);
                     a.innerHTML = ".fold";
                 }
-            } else if (c == "grid") {
+            } else if (c == "size") {
                 td.innerHTML = `${val}x${val}`;
             } else if (c == "efficiency") {
                 td.innerHTML = `${val} = ${parse_efficiency(val).toFixed(3)}`;
             } else if (c == "notes") {
                 td.style.textAlign = "left";
-                td.innerHTML = val;
+                if (line.site == "") {
+                    td.innerHTML = val;
+                } else {
+                    td.innerHTML = `<a href=${line.link}>${line.site}</a>` + (
+                        (line.notes == "") ? "" : `, ${line.notes}`
+                    );
+                }
             } else if (c == "author") {
                 td.innerHTML = AUTHORS[val];
             } else {
@@ -104,4 +112,34 @@ window.onload = () => {
             td.style.background = (e == line.efficiency) ?  "white" : "lightgray";
         }
     }
+    const csv = document.getElementById("csv");
+    const head = [];
+    for (const c of COLS) {
+        head.push(c);
+        if (c == "efficiency") {
+            head.push("efficiency (numeric)");
+        }
+    }
+    const L = [head];
+    for (const A of D) {
+        const line = [];
+        for (const c of COLS) {
+            const v = A[COLI[c]];
+            if (c == "efficiency") {
+                line.push(`(${v})`);
+                line.push(parse_efficiency(v));
+            } else if (c == "author") {
+                line.push(AUTHORS[v]);
+            } else if (c == "cp") {
+                line.push((v == 1) ? true : false);
+            } else {
+                line.push(v);
+            }
+        }
+        line.join(",");
+        L.push(line);
+    }
+    const csv_data = new Blob([L.join("\n")], {type: "text/plain"});
+    csv.setAttribute("download", "checkerboard.csv");
+    csv.setAttribute("href", window.URL.createObjectURL(csv_data));
 };
