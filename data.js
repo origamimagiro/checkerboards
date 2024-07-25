@@ -19,39 +19,55 @@ export const AUTHORS = {
     tanak: "Masashi TANAKA",
      mosa: "@mosa_mosa_8823",
     isaac: "Erik DEMAINE et al.",
+    tahir: "Hadi Tahir",
+     miwu: "Mi Wu",
+    kucha: "Mai Mingliang",
 };
 
 export const COLS = ["cp", "size", "type", "author", "year", "#", "efficiency", "site", "link", "notes"];
 
 const BUDAI = "http://www.budaiorigami.hu/en/chequered";
 const ISAAC = "https://erikdemaine.org/papers/Checkerboard_ISAAC2009/paper.pdf";
+const DUREI = "https://arxiv.org/pdf/1510.07499";
 export const D = [
-    [0, 2,  "seamless", "isaac", 2009, 1, "2/3",   "ISAAC2009", ISAAC, ""],
-    [0, 3,  "seamless", "isaac", 2009, 1, "3/5",   "ISAAC2009", ISAAC, ""],
-    [0, 4,  "seamless", "isaac", 2009, 1, "4/10",  "ISAAC2009", ISAAC, ""],
-    [0, 11, "seamless", "brown", 2024, 1, "11/65", "Instagram", "https://www.instagram.com/p/C5Zy-s7Li4l", ""],
-    [0, 9,  "seamless", "brown", 2024, 1, "9/39",  "Instagram", "https://www.instagram.com/p/C9tCnuQJ7JT", ""],
-    [1, 7,  "seamless", "brown", 2024, 1, "7/23",  "Instagram", "https://www.instagram.com/p/C8GRXVGtG7T", ""],
-    [1, 6,  "seamless", "brown", 2024, 1, "6/18",  "Instagram", "https://www.instagram.com/p/C3d67tFrBef", ""],
-    [0, 8,     "fuzzy",  "mosa", 2020, 1, "8/28",  "Twitter", "https://x.com/mosa_mosa_8823/status/1311363276710662145", ""],
-    [0, 8,  "seamless",  "mosa", 2020, 1, "8/30",  "Twitter", "https://x.com/mosa_mosa_8823/status/1318827512554688512", ""],
-    [0, 3, "flippable",  "mosa", 2020, 1, "3/7",   "Twitter", "https://x.com/mosa_mosa_8823/status/1319081994513379328", ""],
-    [1, 3, "flippable",    "ku", 2020, 1, "3/(4+r6)",   "Twitter", "https://x.com/origamimagiro/status/1319275391199006724", ""],
-    [0, 4, "flippable",    "ku", 2020, 1, "4/(8+r2)",   "Twitter", "https://x.com/origamimagiro/status/1325555134307291137", ""],
-    [0, 4, "flippable", "tanak", 2020, 1, "4/(7+2r2)",  "Twitter", "https://x.com/MeRcY1999/status/1325432200544702465", ""],
-    [0, 4, "flippable", "tanak", 2020, 1, "4/(8+r2)",   "Twitter", "https://x.com/MeRcY1999/status/1327979479176675328", ""],
-    [0, 4, "flippable",  "mosa", 2020, 1, "4/10",   "Twitter", "https://x.com/mosa_mosa_8823/status/1318857416709001217", ""],
-    [0, 5,     "fuzzy", "tanak", 2020, 1, "5/12",   "Twitter", "https://x.com/MeRcY1999/status/1330324192609280001", ""],
-    [0, 8,     "fuzzy", "tanak", 2020, 1, "8/28",   "Twitter", "https://x.com/MeRcY1999/status/1315240512882765827", ""],
-    [1, 1,  "seamless",  "none",  "?", 1, "1/1",    "", "", "Unfolded square, provably optimal! :)"],
-    [1, 4,     "fuzzy",    "ku", 2020, 1, "4/8",    "Flat-Folder, Instagram #084", "https://github.com/origamimagiro/flat-folder/tree/main/examples/instagram", ""],
-    [1, 4,  "seamless", "brown", 2024, 1, "4/9",    "Instagram", "https://www.instagram.com/p/C2sQrMgrTIg", ""],
-    [1, 4,  "seamless", "brown", 2024, 2, "4/9",    "Instagram", "https://www.instagram.com/p/C2sQrMgrTIg", ""],
-    [1, 5,  "seamless", "brown", 2024, 1, "5/13",   "Instagram", "https://www.instagram.com/p/C2sQrMgrTIg", ""],
-    [1, 8,     "fuzzy", "bchan", 2023, 1, "8/38",   "Instagram", "https://www.instagram.com/p/C1Nd0YRJvte", "pureland"],
-    [1, 8,  "seamless", "brown", 2024, 1, "8/28",   "Instagram", "https://www.instagram.com/p/C8n879_N8OI", ""],
-    [1, 8,     "fuzzy",    "ku", 2020, 1, "8/26",   "Twitter", "https://x.com/origamimagiro/status/1320723073524363264", ""],
-    [1, 8, "flippable",    "ku", 2020, 1, "8/34",   "Twitter", "https://x.com/origamimagiro/status/1318576259463479298", ""],
+    [0, 2, "flippable*", "durei", 2015, 1, "2/2", "Paper", DUREI, "corners not fully flippable"],
+    [0, 4, "flippable*", "durei", 2015, 1, "4/8", "Paper", DUREI, "corners not fully flippable"],
+    [0, 6, "flippable*", "durei", 2015, 1, "6/18", "Paper", DUREI, "corners not fully flippable"],
+    [0, 8, "flippable*", "durei", 2015, 1, "8/32", "Paper", DUREI, "corners not fully flippable"],
+    [0, 4, "fuzzy", "durei", 2019, 1, "4/12", "Paper", "https://hal.science/hal-02151659v2/document", "iso-area, claimed optimal"],
+    [0, 6, "fuzzy", "kucha", 2018, 1, "6/18", "Book", "https://www.origami-shop.com/en/twocolororigamiadventures-xml-206_2649_208_2700-12535.html", ""],
+    [0, 8, "flippable", "tahir", 2017, 1, "8/44", "Book", "https://www.giladorigami.com/origami-database/Pixel+8x8+Hadi%2BTahir", ""],
+    [0, 6, "flippable", "tahir", 2022, 1, "6/24", "Youtube", "https://youtu.be/_Wp8oW6c4_0?si=N2kYd7Bm73tMLh54", ""],
+    [0, 5, "flippable", "tahir", "?", 1, "5/16", "OrigamiUSA", "https://origamiusa.org/catalog/products/pixel-5x5-pdf", ""],
+    [0, 4, "flippable", "tahir", 2018, 1, "4/10", "Youtube", "https://youtu.be/ZWk-l-3NDCA?si=5LY0G2vOwE6WEri6", ""],
+    [0, 2, "flippable", "miwu", 2019, 1, "2/4", "Facebook", "https://www.facebook.com/photo.php?fbid=1267678066732278", ""],
+    [0, 3, "flippable", "miwu", 2019, 1, "3/7", "Facebook", "https://www.facebook.com/photo.php?fbid=1267678066732278", ""],
+    [0, 2, "seamless", "isaac", 2009, 1, "2/3", "Paper", ISAAC, ""],
+    [0, 3, "seamless", "isaac", 2009, 1, "3/5", "Paper", ISAAC, ""],
+    [0, 4, "seamless", "isaac", 2009, 1, "4/10", "Paper", ISAAC, ""],
+    [0, 11,"seamless", "brown", 2024, 1, "11/65", "Instagram", "https://www.instagram.com/p/C5Zy-s7Li4l", ""],
+    [0, 9, "seamless", "brown", 2024, 1, "9/39", "Instagram", "https://www.instagram.com/p/C9tCnuQJ7JT", ""],
+    [1, 7, "seamless", "brown", 2024, 1, "7/23", "Instagram", "https://www.instagram.com/p/C8GRXVGtG7T", ""],
+    [1, 6, "seamless", "brown", 2024, 1, "6/18", "Instagram", "https://www.instagram.com/p/C3d67tFrBef", ""],
+    [0, 8, "fuzzy",  "mosa", 2020, 1, "8/28", "Twitter", "https://x.com/mosa_mosa_8823/status/1311363276710662145", ""],
+    [0, 8, "seamless",  "mosa", 2020, 1, "8/30", "Twitter", "https://x.com/mosa_mosa_8823/status/1318827512554688512", ""],
+    [0, 3, "flippable",  "mosa", 2020, 1, "3/7", "Twitter", "https://x.com/mosa_mosa_8823/status/1319081994513379328", ""],
+    [1, 3, "flippable",    "ku", 2020, 1, "3/(4+r6)", "Twitter", "https://x.com/origamimagiro/status/1319275391199006724", ""],
+    [0, 4, "flippable",    "ku", 2020, 1, "4/(8+r2)", "Twitter", "https://x.com/origamimagiro/status/1325555134307291137", ""],
+    [0, 4, "flippable", "tanak", 2020, 1, "4/(7+2r2)", "Twitter", "https://x.com/MeRcY1999/status/1325432200544702465", ""],
+    [0, 4, "flippable", "tanak", 2020, 1, "4/(8+r2)", "Twitter", "https://x.com/MeRcY1999/status/1327979479176675328", ""],
+    [0, 4, "flippable",  "mosa", 2020, 1, "4/10", "Twitter", "https://x.com/mosa_mosa_8823/status/1318857416709001217", ""],
+    [0, 5, "fuzzy", "tanak", 2020, 1, "5/12", "Twitter", "https://x.com/MeRcY1999/status/1330324192609280001", ""],
+    [0, 8, "fuzzy", "tanak", 2020, 1, "8/28", "Twitter", "https://x.com/MeRcY1999/status/1315240512882765827", ""],
+    [1, 1, "seamless", "none", "?", 1, "1/1",  "", "", "Unfolded square, provably optimal! :)"],
+    [1, 4, "fuzzy", "ku", 2020, 1, "4/8", "Flat-Folder, Instagram #084", "https://github.com/origamimagiro/flat-folder/tree/main/examples/instagram", "rotationally symmetric"],
+    [1, 4, "seamless", "brown", 2024, 1, "4/9", "Instagram", "https://www.instagram.com/p/C2sQrMgrTIg", ""],
+    [1, 4, "seamless", "brown", 2024, 2, "4/9", "Instagram", "https://www.instagram.com/p/C2sQrMgrTIg", ""],
+    [1, 5, "seamless", "brown", 2024, 1, "5/13", "Instagram", "https://www.instagram.com/p/C2sQrMgrTIg", ""],
+    [1, 8, "fuzzy", "bchan", 2023, 1, "8/38", "Instagram", "https://www.instagram.com/p/C1Nd0YRJvte", "pureland"],
+    [1, 8, "seamless", "brown", 2024, 1, "8/28", "Instagram", "https://www.instagram.com/p/C8n879_N8OI", ""],
+    [1, 8, "fuzzy", "ku", 2020, 1, "8/26", "Twitter", "https://x.com/origamimagiro/status/1320723073524363264", ""],
+    [1, 8, "flippable", "ku", 2020, 1, "8/34", "Twitter", "https://x.com/origamimagiro/status/1318576259463479298", ""],
     [0, 4,     "fuzzy", "hulme", 1976, 1,  "4/8", "Budai", BUDAI, ""],
     [0, 8,     "fuzzy", "hulme", 1976, 1, "8/32", "Budai", BUDAI, ""],
     [0, 8,  "seamless", "casey", 1987, 1, "8/40", "Budai", BUDAI, ""],
@@ -84,8 +100,13 @@ export const D = [
 // }
 const isaac_side2 = (n) => n*n/4 + 4*n + 4 - 5/2*(n%4);
 for (let n = 6; n <= 20; n += 2) {
-    D.push([0, n, "seamless", "isaac", 2009, 1, `${n}/${isaac_side2(n)}`, "ISAAC2009", ISAAC, ""]);
-    D.push([0, n - 1, "seamless", "isaac", 2009, 1, `${n - 1}/${isaac_side2(n)}`, "ISAAC2009", ISAAC, ""]);
+    D.push([0, n, "seamless", "isaac", 2009, 1, `${n}/${isaac_side2(n)}`, "Paper", ISAAC, ""]);
+    D.push([0, n - 1, "seamless", "isaac", 2009, 1, `${n - 1}/${isaac_side2(n)}`, "Paper", ISAAC, ""]);
+}
+
+const durei_side = (n) => ((n % 2 == 0) ? (n*n) : (n*n - 1))/2;
+for (let n = 5; n <= 20; ++n) {
+    D.push([0, n, "fuzzy", "durei", 2015, 1, `${n}/${durei_side(n)}`, "Paper", DUREI, ""]);
 }
 
 /* Efficiency encoding

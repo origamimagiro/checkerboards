@@ -30,6 +30,7 @@ const type_cmp = {
     seamless: 0,
     flippable: 1,
     fuzzy: 2,
+    "flippable*": 3,
 };
 
 window.onload = () => {
