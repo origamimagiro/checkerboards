@@ -53,7 +53,7 @@ export const D = [
     [1, 8,   "seamless",  "mosa", 2020, 1, "8/30", "Twitter", "https://x.com/mosa_mosa_8823/status/1318827512554688512", ""],
     [1, 3,  "flippable",  "mosa", 2020, 1, "3/7", "Twitter", "https://x.com/mosa_mosa_8823/status/1319081994513379328", ""],
     [1, 3,  "flippable",    "ku", 2020, 1, "3/(4+r6)", "Twitter", "https://x.com/origamimagiro/status/1319275391199006724", ""],
-    [0, 4,  "flippable",    "ku", 2020, 1, "4/(8+r2)", "Twitter", "https://x.com/origamimagiro/status/1325555134307291137", ""],
+    [1, 4,  "flippable",    "ku", 2020, 1, "4/(8+r2)", "Twitter", "https://x.com/origamimagiro/status/1325555134307291137", ""],
     [0, 4,  "flippable", "tanak", 2020, 1, "4/(7+2r2)", "Twitter", "https://x.com/MeRcY1999/status/1325432200544702465", ""],
     [0, 4,  "flippable", "tanak", 2020, 1, "4/(8+r2)", "Twitter", "https://x.com/MeRcY1999/status/1327979479176675328", ""],
     [1, 4,  "flippable",  "mosa", 2020, 1, "4/10", "Twitter", "https://x.com/mosa_mosa_8823/status/1318857416709001217", ""],
