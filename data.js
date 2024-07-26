@@ -49,7 +49,7 @@ export const D = [
     [0, 9,   "seamless", "brown", 2024, 1, "9/39", "Instagram", "https://www.instagram.com/p/C9tCnuQJ7JT", ""],
     [1, 7,   "seamless", "brown", 2024, 1, "7/23", "Instagram", "https://www.instagram.com/p/C8GRXVGtG7T", ""],
     [1, 6,   "seamless", "brown", 2024, 1, "6/18", "Instagram", "https://www.instagram.com/p/C3d67tFrBef", ""],
-    [0, 8,      "fuzzy",  "mosa", 2020, 1, "8/28", "Twitter", "https://x.com/mosa_mosa_8823/status/1311363276710662145", ""],
+    [1, 8,      "fuzzy",  "mosa", 2020, 1, "8/28", "Twitter", "https://x.com/mosa_mosa_8823/status/1311363276710662145", ""],
     [1, 8,   "seamless",  "mosa", 2020, 1, "8/30", "Twitter", "https://x.com/mosa_mosa_8823/status/1318827512554688512", ""],
     [0, 3,  "flippable",  "mosa", 2020, 1, "3/7", "Twitter", "https://x.com/mosa_mosa_8823/status/1319081994513379328", ""],
     [1, 3,  "flippable",    "ku", 2020, 1, "3/(4+r6)", "Twitter", "https://x.com/origamimagiro/status/1319275391199006724", ""],
