@@ -72,7 +72,7 @@ export const D = [
     [1, 2,   "seamless", "montr", 2012, 1, "2/3", "Book", "https://www.giladorigami.com/origami-database-book/2243/Origami-and-Math:-Simple-to-Complex-by-John-Montroll", ""],
     [1, 3,   "seamless", "montr", 2012, 1, "3/10", "Book", "https://www.giladorigami.com/origami-database-book/2243/Origami-and-Math:-Simple-to-Complex-by-John-Montroll", ""],
     [0, 4,      "fuzzy", "hulme", 1976, 1, "4/8", "Budai", BUDAI, ""],
-    [0, 8,      "fuzzy", "hulme", 1976, 1, "8/32", "Budai", BUDAI, ""],
+    [0, 8,      "fuzzy", "hulme", 1976, 1, "8/64", "Budai", BUDAI, ""],
     [0, 8,   "seamless", "casey", 1987, 1, "8/40", "Budai", BUDAI, ""],
     [0, 8,      "fuzzy", "montr", 1990, 1, "8/36", "Budai", BUDAI, ""],
     [0, 4,      "fuzzy", "birke",  "?", 1, "4/16", "Budai", BUDAI, ""],
