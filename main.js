@@ -1,10 +1,9 @@
 import { AUTHORS, COLS, D } from "./data.js";
 
-const append = (type, par, border = false) => {
+const append = (type, par) => {
     const el = document.createElement(type);
     el.style.textAlign = "center";
     el.style.padding = "3px";
-    if (border) { el.style.border = "1px solid black"; }
     par.appendChild(el);
     return el;
 };
@@ -45,7 +44,7 @@ window.onload = () => {
     const header_row = append("tr", table);
     for (const c of COLS) {
         if ((c == "site") || (c == "link")) { continue; }
-        const td = append("th", header_row, true);
+        const td = append("th", header_row);
         td.style.background = "lightgray";
         td.innerHTML = c;
     }
@@ -78,7 +77,7 @@ window.onload = () => {
         }
         for (const c of COLS) {
             if ((c == "site") || (c == "link")) { continue; }
-            const td = append("td", row, true);
+            const td = append("td", row);
             const val = line[c];
             if (c == "cp") {
                 if (val != 0) {
