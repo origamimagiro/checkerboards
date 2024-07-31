@@ -85,6 +85,7 @@ export const D = [
     [1, 8,      "fuzzy", "schen", 2000, 1, "8/32", "Budai", BUDAI, ""],
     [0, 4,   "seamless", "louis", 2000, 1, "4/16", "Budai", BUDAI, ""],
     [0, 5,      "fuzzy",  "viet",  "?", 1, "5/13", "Budai", BUDAI, ""],
+//  [0, 6,      "fuzzy",  "viet", 2001, 1, "?", "Book", "https://www.giladorigami.com/origami-database-book/3904/MFPP-2001-Convention", ""],
     [0, 4,      "fuzzy", "shafe", 2003, 1, "4/16", "Budai", BUDAI, ""],
     [0, 4,   "seamless", "budai", 2005, 1, "4/12", "Budai", BUDAI, ""],
     [0, 4,   "seamless", "budai", 2009, 1, "4/12", "Budai", BUDAI, ""],
@@ -93,7 +94,7 @@ export const D = [
     [1, 4,   "seamless", "montr", 2009, 1, "4/10", "Budai", BUDAI, ""],
     [1, 5,      "fuzzy", "montr", 2009, 1, "5/13", "Budai", BUDAI, ""],
     [0, 5,   "seamless", "montr", 2009, 1, "5/15", "Budai", BUDAI, ""],
-    [0, 6,      "fuzzy", "montr", 2009, 1, "6/24", "Budai", BUDAI, ""],
+    [1, 6,      "fuzzy", "montr", 2009, 1, "6/24", "Budai", BUDAI, ""],
     [0, 7,      "fuzzy", "montr", 2009, 1, "7/27", "Budai", BUDAI, ""],
 ];
 
