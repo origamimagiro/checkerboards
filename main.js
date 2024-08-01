@@ -112,7 +112,6 @@ window.onload = () => {
             }
             td.style.background = (e == line.efficiency) ?  "white" : "lightgray";
         }
-        console.log(i, e, line.efficiency);
     }
     const csv = document.getElementById("csv");
     const head = [];
