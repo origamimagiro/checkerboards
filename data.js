@@ -65,7 +65,7 @@ export const D = [
     [0, 7,  "C", "tanak", 2006, 1, "7/24", "Blog", "https://kfd-oriclub.hatenadiary.org/entry/20060102", ""],
     [1, 8,  "C", "tanak", 2020, 1, "8/28", "Twitter", "https://x.com/MeRcY1999/status/1315240512882765827", ""],
     [1, 1, "SC",  "none",    0, 1, "1/1",  "", "", "Unfolded square, provably optimal! :)"],
-    [1, 4,  "C",    "ku", 2020, 1, "4/8", "Flat-Folder, Instagram #084", "https://github.com/origamimagiro/flat-folder/tree/main/examples/instagram", ""],
+    [1, 4,  "C",    "ku", 2020, 1, "4/8", "Flat-Folder", "https://github.com/origamimagiro/flat-folder/tree/main/examples/instagram", "Instagram Dataset #084"],
     [1, 4, "SC", "brown", 2024, 1, "4/9", "Instagram", "https://www.instagram.com/p/C2sQrMgrTIg", ""],
     [1, 4, "SC", "brown", 2024, 2, "4/9", "Instagram", "https://www.instagram.com/p/C2sQrMgrTIg", ""],
     [1, 5, "SC", "brown", 2024, 1, "5/13", "Instagram", "https://www.instagram.com/p/C2sQrMgrTIg", ""],
