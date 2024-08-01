@@ -22,6 +22,7 @@ export const AUTHORS = {
     tahir: "Hadi TAHIR",
      miwu: "Mi WU",
     kucha: "Mingliang MAI",
+     lang: "Robert LANG",
 };
 
 export const COLS = ["cp", "size", "type", "author", "year", "#", "efficiency", "site", "link", "notes"];
@@ -97,6 +98,7 @@ export const D = [
     [0, 5, "SC", "montr", 2009, 1, "5/15", "Budai", BUDAI, ""],
     [1, 6,  "C", "montr", 2009, 1, "6/24", "Budai", BUDAI, ""],
     [0, 7,  "C", "montr", 2009, 1, "7/27", "Budai", BUDAI, ""],
+    [1, 8, "SC",  "lang", 2012, 1, "8/48", "Slides", "https://ocw.mit.edu/courses/6-849-geometric-folding-algorithms-linkages-origami-polyhedra-fall-2012/fd9224cab4d18594c44256326b438748_MIT6_849F12_slidesC04.pdf", "pg 50"],
 ];
 
 // ISAAC general seamless and flippable construction
