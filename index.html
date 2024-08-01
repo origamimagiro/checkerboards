@@ -33,12 +33,36 @@
         You can also download a CSV file of the current listing <a id="csv">here</a>.
         </p>
         <p>
-        Folded models are typed as either
-        <b>seamless</b> (each color-change region is formed by a visible
+        Each model is classified with the following type annotations:
+        <ul>
+        <li>
+        Models marked with "C" can fold into a <b>checkerboard</b> color-change pattern.
+        </li>
+        <li>
+        Models marked with "S" are <b>seamless</b> (each color-change region is formed by a visible
         subset of a continuous crease pattern face, same as "clean" in Budai's
-        listing), <b>fuzzy</b> (i.e., not seamless), or
-        <b>flippable</b> (each grid cell can be flipped locally between
-        white/color states via a single fold).
+        listing).
+        </li>
+        <li>
+        Models marked with "F" are <b>flippable</b> (each square can be
+        independently "flipped" between white and color states via
+        a simple local change to the model).
+        Models that are <b>nearly flippable</b> are marked with "f",
+        clarified in the notes.
+        </li>
+        <li>
+        Models marked with "D" are <b>double-sided</b> (form a checkerboard
+        pattern on both sides of the model).
+        </li>
+        <li>
+        Models marked with "I" are <b>iso-area</b> (the crease pattern
+        is the same under a reflection and rotation by 180 degrees).
+        </li>
+        <li>
+        Models marked with "P" are <b>pureland</b> (can be folded via a sequence
+        of only mountain and valley folds).
+        </li>
+        </ul>
         </p>
         <p>
         The year column represents the year the model was designed.

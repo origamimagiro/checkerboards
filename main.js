@@ -26,10 +26,13 @@ const parse_efficiency = (s) => {
 };
 
 const type_cmp = {
-    seamless: 0,
-    flippable: 1,
-    fuzzy: 2,
-    "flippable*": 3,
+    I: 0,
+    D: 1,
+    P: 2,
+    S: 3,
+    F: 4,
+    C: 5,
+    f: 6,
 };
 
 window.onload = () => {
@@ -55,8 +58,8 @@ window.onload = () => {
         const ae = parse_efficiency(a[COLI.efficiency]);
         const be = parse_efficiency(b[COLI.efficiency]);
         if (be != ae) { return be - ae; }
-        const at = a[COLI.type];
-        const bt = b[COLI.type];
+        const at = a[COLI.type][0];
+        const bt = b[COLI.type][0];
         if (at != bt) { return type_cmp[at] - type_cmp[bt]; }
         const ay = a[COLI.year];
         const by = b[COLI.year];
@@ -68,13 +71,17 @@ window.onload = () => {
         const row = append("tr", table);
         const line = {};
         for (const c of COLS) { line[c] = A[COLI[c]]; }
-        const k = `${line.size},${line.type}`;
-        if (line.type == "flippable*") { best.set(k, "nope"); }
-        const e = best.get(k) ?? line.efficiency;
-        if (e == line.efficiency) {
-            best.set(k, i);
-            if (line.type == "seamless") { best.set(`${line.size},fuzzy`, i); }
-            if (line.type == "fippable") { best.set(`${line.size},fuzzy`, i); }
+        let mark = false;
+        for (const c of line.type) {
+            if (c == "f") { mark = false; break; }
+            const k = `${line.size},${c}`;
+            const e = best.get(k) ?? line.efficiency;
+            if (e == line.efficiency) {
+                mark = true;
+                best.set(k, i);
+                if (c == "S") { best.set(`${line.size},C`, i); }
+                if (c == "F") { best.set(`${line.size},C`, i); }
+            }
         }
         for (const c of COLS) {
             if ((c == "site") || (c == "link")) { continue; }
@@ -110,7 +117,7 @@ window.onload = () => {
             } else {
                 td.innerHTML = val;
             }
-            td.style.background = (e == line.efficiency) ?  "white" : "lightgray";
+            td.style.background = (mark) ?  "white" : "lightgray";
         }
     }
     const csv = document.getElementById("csv");
