@@ -69,6 +69,7 @@ window.onload = () => {
         const line = {};
         for (const c of COLS) { line[c] = A[COLI[c]]; }
         const k = `${line.size},${line.type}`;
+        if (line.type == "flippable*") { best.set(k, "nope"); }
         const e = best.get(k) ?? line.efficiency;
         if (e == line.efficiency) {
             best.set(k, i);
@@ -111,6 +112,7 @@ window.onload = () => {
             }
             td.style.background = (e == line.efficiency) ?  "white" : "lightgray";
         }
+        console.log(i, e, line.efficiency);
     }
     const csv = document.getElementById("csv");
     const head = [];
