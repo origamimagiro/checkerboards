@@ -40,7 +40,7 @@ export const D = [
     [0, 6,  "flippable", "tahir", 2022, 1, "6/24", "Youtube", "https://youtu.be/_Wp8oW6c4_0?si=N2kYd7Bm73tMLh54", ""],
     [1, 5,  "flippable", "tahir", 2022, 1, "5/16", "OrigamiUSA", "https://origamiusa.org/catalog/products/pixel-5x5-pdf", ""],
     [1, 4,  "flippable", "tahir", 2016, 1, "4/10", "Youtube", "https://youtu.be/ZWk-l-3NDCA?si=5LY0G2vOwE6WEri6", ""],
-//  [0, 3,  "flippable", "tahir", 2024, 1, "3/7", "Twitter", "https://x.com/haditahir/status/1780823160004419972", ""],
+    [1, 3,  "flippable*", "tahir", 2024, 1, "3/7", "Twitter", "https://x.com/haditahir/status/1780823160004419972", "one corner partial coverage"],
     [1, 2,  "flippable",  "miwu", 2019, 1, "2/4", "Facebook", "https://www.facebook.com/photo.php?fbid=1267678066732278", ""],
     [1, 3,  "flippable",  "miwu", 2019, 1, "3/7", "Facebook", "https://www.facebook.com/photo.php?fbid=1267678066732278", ""],
     [0, 5,  "flippable",  "miwu", 2020, 1, "5/16", "Book", "https://www.giladorigami.com/origami-database-book/4191/Multi-colorigami-by-Mi-Wu", ""],
