@@ -80,7 +80,7 @@ export const D = [
     [0, 8, "SC", "casey", 1987, 1, "8/40", "Budai", BUDAI, ""],
     [0, 8,  "C", "montr", 1990, 1, "8/36", "Budai", BUDAI, ""],
     [0, 4,  "C", "birke",  "?", 1, "4/16", "Budai", BUDAI, ""],
-    [0, 4, "SC", "kirsc", 1996, 1, "4/10", "Budai", BUDAI, ""],
+    [1, 4, "SC", "kirsc", 1996, 1, "4/10", "Budai", BUDAI, ""],
     [0, 8, "SC", "kirsc", 1996, 1, "8/40", "Budai", BUDAI, ""],
     [0, 8,  "C", "holle", 1997, 1, "8/32", "Budai", BUDAI, ""],
     [0, 8,  "C", "durei", 1998, 1, "8/32", "Budai", BUDAI, ""],
