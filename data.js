@@ -31,7 +31,7 @@ const BUDAI = "http://www.budaiorigami.hu/en/chequered";
 const ISAAC = "https://erikdemaine.org/papers/Checkerboard_ISAAC2009/paper.pdf";
 const DUREI = "https://arxiv.org/pdf/1510.07499";
 export const D = [
-    [1, 2,"IDSC", "none",    0, 1, "2/2", "Youtube", "https://www.youtube.com/watch?v=HqBObWb4OQA", "please let us of any earlier reference for this model"],
+    [1, 2,"IDSC", "none",    0, 1, "2/4", "Youtube", "https://www.youtube.com/watch?v=HqBObWb4OQA", "please let us of any earlier reference for this model"],
     [0, 2, "fC", "durei", 2015, 1, "2/2", "Paper", DUREI, "corners not fully flippable"],
     [0, 4, "FC", "durei", 2015, 1, "4/10", "Paper", DUREI, ""],
     [0, 6, "FC", "durei", 2015, 1, "6/18", "Paper", DUREI, ""],
