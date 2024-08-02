@@ -96,7 +96,7 @@ export const D = [
     [0, 5, "SC", "budai", 2008, 1, "5/17", "Budai", BUDAI, ""],
     [1, 4, "SC", "montr", 2009, 1, "4/10", "Budai", BUDAI, ""],
     [1, 5,  "C", "montr", 2009, 1, "5/13", "Budai", BUDAI, ""],
-    [0, 5, "SC", "montr", 2009, 1, "5/15", "Budai", BUDAI, ""],
+    [1, 5, "SC", "montr", 2009, 1, "5/15", "Budai", BUDAI, ""],
     [1, 6,  "C", "montr", 2009, 1, "6/24", "Budai", BUDAI, ""],
     [0, 7,  "C", "montr", 2009, 1, "7/27", "Budai", BUDAI, ""],
     [1, 8, "SC",  "lang", 2012, 1, "8/48", "Slides", "https://ocw.mit.edu/courses/6-849-geometric-folding-algorithms-linkages-origami-polyhedra-fall-2012/fd9224cab4d18594c44256326b438748_MIT6_849F12_slidesC04.pdf", "pg 50"],
