@@ -45,7 +45,7 @@ export const D = [
     [1, 3, "fC", "tahir", 2024, 1, "3/7", "Twitter", "https://x.com/haditahir/status/1780823160004419972", "one corner partial coverage"],
     [1, 2, "FC",  "miwu", 2019, 1, "2/4", "Facebook", "https://www.facebook.com/photo.php?fbid=1267678066732278", ""],
     [1, 3, "FC",  "miwu", 2019, 1, "3/7", "Facebook", "https://www.facebook.com/photo.php?fbid=1267678066732278", ""],
-    [1, 5, "fC",  "miwu", 2020, 1, "5/16", "Book", "https://www.giladorigami.com/origami-database-book/4191/Multi-colorigami-by-Mi-Wu", "center square not flippable"],
+    [1, 5, "FC",  "miwu", 2020, 1, "5/16", "Book", "https://www.giladorigami.com/origami-database-book/4191/Multi-colorigami-by-Mi-Wu", ""],
     [1, 2, "SC", "isaac", 2009, 1, "2/3", "Paper", ISAAC, ""],
     [1, 3, "SC", "isaac", 2009, 1, "3/5", "Paper", ISAAC, ""],
     [1, 4, "SC", "isaac", 2009, 1, "4/10", "Paper", ISAAC, ""],
