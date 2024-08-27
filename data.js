@@ -32,11 +32,12 @@ const ISAAC = "https://erikdemaine.org/papers/Checkerboard_ISAAC2009/paper.pdf";
 const DUREI = "https://arxiv.org/pdf/1510.07499";
 export const D = [
     [1, 2,"IDSC", "none",    0, 1, "2/4", "Youtube", "https://www.youtube.com/watch?v=HqBObWb4OQA", "please let us of any earlier reference for this model"],
-    [0, 2, "fC", "durei", 2015, 1, "2/2", "Paper", DUREI, "corners not fully flippable"],
-    [0, 4, "FC", "durei", 2015, 1, "4/10", "Paper", DUREI, ""],
+    [1, 2, "fC", "durei", 2015, 1, "2/2", "Paper", DUREI, "corners not fully flippable"],
+    [1, 4, "FC", "durei", 2015, 1, "4/10", "Paper", DUREI, ""],
+    [1, 5,  "C", "durei", 2015, 2, "5/12", "Paper", DUREI, ""],
     [0, 6, "FC", "durei", 2015, 1, "6/18", "Paper", DUREI, ""],
     [0, 8, "FC", "durei", 2015, 1, "8/32", "Paper", DUREI, ""],
-    [0, 4,"IDC", "durei", 2019, 1, "4/12", "Paper", "https://hal.science/hal-02151659v2/document", "claimed optimal"],
+    [1, 4,"IDC", "durei", 2019, 1, "4/12", "Paper", "https://hal.science/hal-02151659v2/document", "claimed optimal"],
     [0, 6,  "C", "kucha", 2018, 1, "6/18", "Book", "https://www.origami-shop.com/en/twocolororigamiadventures-xml-206_2649_208_2700-12535.html", ""],
     [0, 8, "FC", "tahir", 2017, 1, "8/44", "Book", "https://www.giladorigami.com/origami-database/Pixel+8x8+Hadi%2BTahir", ""],
     [0, 6, "FC", "tahir", 2022, 1, "6/24", "Youtube", "https://youtu.be/_Wp8oW6c4_0?si=N2kYd7Bm73tMLh54", ""],
