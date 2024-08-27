@@ -63,7 +63,8 @@ window.onload = () => {
         if (at != bt) { return type_cmp[at] - type_cmp[bt]; }
         const ay = a[COLI.year];
         const by = b[COLI.year];
-        return ay - by;
+        if (ay != by) { return ay - by; }
+        return a[COLI["#"]] - b[COLI["#"]];
     });
     const best = new Map();
     for (let i = 0; i < D.length; ++i) {

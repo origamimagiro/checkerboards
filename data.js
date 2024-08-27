@@ -119,8 +119,10 @@ for (let n = 6; n <= 20; n += 2) {
 }
 
 const durei_side = (n) => ((n % 2 == 0) ? (n*n) : (n*n - 1))/2;
+const durei_cps = new Set([5]);
 for (let n = 5; n <= 20; ++n) {
-    D.push([0, n, "C", "durei", 2015, 1, `${n}/${durei_side(n)}`, "Paper", DUREI, ""]);
+    const cp = durei_cps.has(n) ? 1 : 0;
+    D.push([cp, n, "C", "durei", 2015, 1, `${n}/${durei_side(n)}`, "Paper", DUREI, ""]);
 }
 
 /* Efficiency encoding
