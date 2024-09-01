@@ -106,16 +106,17 @@ export const D = [
     [1, 8, "SC",  "lang", 2012, 1, "8/48", "Slides", "https://ocw.mit.edu/courses/6-849-geometric-folding-algorithms-linkages-origami-polyhedra-fall-2012/fd9224cab4d18594c44256326b438748_MIT6_849F12_slidesC04.pdf", "pg 50"],
 ];
 
+// ISAAC general fuzzy construction
+const isaac_side1 = (n) => (n*n + 8*n - 10)/2;
+for (let n = 2; n <= 20; n += 2) {
+    const cp = (n <= 8) ? 1 : 0;
+    D.push([cp, n, "PC", "isaac", 2009, 1, `${n}/${isaac_side1(n)}`, "Paper", ISAAC, ""]);
+}
 // ISAAC general seamless and flippable construction
-// const isaac_side1 = (n) => (n*n + 8*n - 10)/2;
-// for (let n = 2; n <= 20; n += 2) {
-//     D.push([0, n, "fuzzy", "isaac", 2009, 1, `${n}/${isaac_side1(n)}`,
-//         `<a href="https://erikdemaine.org/papers/Checkerboard_ISAAC2009/paper.pdf">ISAAC2009</a>`],);
-// }
-const isaac_side2 = (n) => n*n/4 + 4*n + 4 - 5/2*(n%4);
+const isaac_side2 = (n) => n*n/4 + 5*n + (n%4)/2;
 for (let n = 6; n <= 20; n += 2) {
-    D.push([0, n, "SFC", "isaac", 2009, 1, `${n}/${isaac_side2(n)}`, "Paper", ISAAC, ""]);
-    D.push([0, n - 1, "SFC", "isaac", 2009, 1, `${n - 1}/${isaac_side2(n)}`, "Paper", ISAAC, ""]);
+    const cp = (n <= 12) ? 1 : 0;
+    D.push([cp, n, "SFC", "isaac", 2009, 1, `${n}/${isaac_side2(n)}`, "Paper", ISAAC, ""]);
 }
 
 const durei_side = (n) => ((n % 2 == 0) ? (n*n) : (n*n - 1))/2;
