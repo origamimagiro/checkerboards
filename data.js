@@ -109,7 +109,7 @@ export const D = [
 // ISAAC general fuzzy construction
 const isaac_side1 = (n) => (n*n + 8*n - 10)/2;
 for (let n = 2; n <= 20; n += 2) {
-    const cp = (n <= 8) ? 1 : 0;
+    const cp = (n <= 16) ? 1 : 0;
     D.push([cp, n, "PC", "isaac", 2009, 1, `${n}/${isaac_side1(n)}`, "Paper", ISAAC, ""]);
 }
 // ISAAC general seamless and flippable construction
