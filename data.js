@@ -114,7 +114,7 @@ for (let n = 2; n <= 20; n += 2) {
 // ISAAC general seamless and flippable construction
 const isaac_side2 = (n) => n*n/4 + 5*n + (n%4)/2;
 for (let n = 6; n <= 20; n += 2) {
-    const cp = (n <= 14) ? 1 : 0;
+    const cp = (n <= 16) ? 1 : 0;
     D.push([cp, n, "SFC", "isaac", 2009, 1, `${n}/${isaac_side2(n)}`, "Paper", ISAAC, ""]);
 }
 
