@@ -1,7 +1,7 @@
 {
   "file_spec": 1.1,
-  "file_creator": "flat-folder",
-  "file_title": "000_brown_2x2_A1_cp",
+  "file_creator": "cp_analyzer",
+  "file_title": "1x1_SC_none_0_1",
   "file_classes": [
     "singleModel"
   ],

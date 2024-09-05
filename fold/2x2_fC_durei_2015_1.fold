@@ -1,7 +1,7 @@
 {
   "file_spec": 1.1,
-  "file_creator": "flat-folder",
-  "file_title": "2x2_fC_durei_2015_1_cp",
+  "file_creator": "cp_analyzer",
+  "file_title": "2x2_fC_durei_2015_1",
   "file_classes": [
     "singleModel"
   ],
@@ -11,32 +11,32 @@
       0
     ],
     [
-      0.5,
-      0
-    ],
-    [
       1,
       0
     ],
     [
-      0,
-      0.5
-    ],
-    [
-      1,
-      0.5
+      2,
+      0
     ],
     [
       0,
       1
     ],
     [
-      0.5,
+      2,
       1
     ],
     [
+      0,
+      2
+    ],
+    [
       1,
-      1
+      2
+    ],
+    [
+      2,
+      2
     ]
   ],
   "edges_vertices": [
