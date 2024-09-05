@@ -1,7 +1,7 @@
 {
   "file_spec": 1.1,
-  "file_creator": "flat-folder",
-  "file_title": "20x20_PC_isaac_2009_1_grid_aligned_cp",
+  "file_creator": "cp_analyzer",
+  "file_title": "20x20_PC_isaac_2009_1",
   "file_classes": [
     "singleModel"
   ],
