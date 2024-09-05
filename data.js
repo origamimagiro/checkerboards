@@ -97,7 +97,7 @@ export const D = [
     [0, 4, "SC", "budai", 2005, 1, "4/12", "Budai", BUDAI, ""],
     [0, 4, "SC", "budai", 2009, 1, "4/12", "Budai", BUDAI, ""],
     [0, 4,  "C", "ville", 2007, 1, "4/10", "Budai", BUDAI, ""],
-    [0, 5, "SC", "budai", 2008, 1, "5/17", "Budai", BUDAI, ""],
+    [1, 5, "SC", "budai", 2008, 1, "5/17", "Budai", BUDAI, ""],
     [1, 4, "SC", "montr", 2009, 1, "4/10", "Budai", BUDAI, ""],
     [1, 5,  "C", "montr", 2009, 1, "5/13", "Budai", BUDAI, ""],
     [1, 5, "SC", "montr", 2009, 1, "5/15", "Budai", BUDAI, ""],
@@ -109,8 +109,7 @@ export const D = [
 // ISAAC general fuzzy construction
 const isaac_side1 = (n) => (n*n + 8*n - 10)/2;
 for (let n = 2; n <= 20; n += 2) {
-    const cp = (n <= 16) ? 1 : 0;
-    D.push([cp, n, "PC", "isaac", 2009, 1, `${n}/${isaac_side1(n)}`, "Paper", ISAAC, ""]);
+    D.push([1, n, "PC", "isaac", 2009, 1, `${n}/${isaac_side1(n)}`, "Paper", ISAAC, ""]);
 }
 // ISAAC general seamless and flippable construction
 const isaac_side2 = (n) => n*n/4 + 5*n + (n%4)/2;
