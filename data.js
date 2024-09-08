@@ -67,7 +67,7 @@ export const D = [
     [0, 7,  "C", "tanak", 2006, 1, "7/24", "Blog", "https://kfd-oriclub.hatenadiary.org/entry/20060102", ""],
     [1, 8,  "C", "tanak", 2020, 1, "8/28", "Twitter", "https://x.com/MeRcY1999/status/1315240512882765827", ""],
     [1, 6,  "C", "tanak", 2024, 1, "6/17", "", "", ""],
-    [1, 6,  "C", "tanak", 2024, 2, "6/16", "", "Twitter", "https://x.com/MeRcY1999/status/1832554119867056636"],
+    [1, 6,  "C", "tanak", 2024, 2, "6/16", "Twitter", "https://x.com/MeRcY1999/status/1832554119867056636", ""],
     [1, 7,  "C", "tanak", 2024, 2, "7/22", "Twitter", "https://x.com/MeRcY1999/status/1824877185704009885", ""],
     [1, 7,  "C", "tanak", 2024, 3, "7/21", "Twitter", "https://x.com/MeRcY1999/status/1824992644390597069", ""],
     [1, 1, "SC",  "none",    0, 1, "1/1",  "", "", "Unfolded square, provably optimal! :)"],
