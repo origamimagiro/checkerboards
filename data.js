@@ -50,7 +50,7 @@ export const D = [
     [1, 2, "SC", "isaac", 2009, 1, "2/3", "Paper", ISAAC, ""],
     [1, 3, "SC", "isaac", 2009, 1, "3/5", "Paper", ISAAC, ""],
     [1, 4, "SC", "isaac", 2009, 1, "4/10", "Paper", ISAAC, ""],
-    [0, 11,"SC", "brown", 2024, 1, "11/57", "Instagram", "https://www.instagram.com/p/DAYwtntJoyS", ""],
+    [0, 11,"SC", "brown", 2024, 2, "11/57", "Instagram", "https://www.instagram.com/p/DAYwtntJoyS", ""],
     [0, 11,"SC", "brown", 2024, 1, "11/65", "Instagram", "https://www.instagram.com/p/C5Zy-s7Li4l", ""],
     [0, 9, "SC", "brown", 2024, 1, "9/39", "Instagram", "https://www.instagram.com/p/C9tCnuQJ7JT", ""],
     [1, 7, "SC", "brown", 2024, 1, "7/23", "Instagram", "https://www.instagram.com/p/C8GRXVGtG7T", ""],
