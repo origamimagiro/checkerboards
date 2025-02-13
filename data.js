@@ -81,7 +81,7 @@ export const D = [
     [1, 8,  "C",    "ku", 2020, 1, "8/26", "Twitter", "https://x.com/origamimagiro/status/1320723073524363264", ""],
     [1, 8, "FC",    "ku", 2020, 1, "8/34", "Twitter", "https://x.com/origamimagiro/status/1318576259463479298", "rotationally symmetric"],
     [1, 2, "SC", "montr", 2012, 1, "2/3", "Book", "https://www.giladorigami.com/origami-database-book/2243/Origami-and-Math:-Simple-to-Complex-by-John-Montroll", ""],
-    [1, 3, "SC", "montr", 2012, 1, "3/10", "Book", "https://www.giladorigami.com/origami-database-book/2243/Origami-and-Math:-Simple-to-Complex-by-John-Montroll", ""],
+    [1, 3, "SC", "montr", 2012, 1, "3/5", "Book", "https://www.giladorigami.com/origami-database-book/2243/Origami-and-Math:-Simple-to-Complex-by-John-Montroll", ""],
     [0, 4,  "C", "hulme", 1976, 1, "4/8", "Budai", BUDAI, ""],
     [0, 8,  "C", "hulme", 1976, 1, "8/64", "Budai", BUDAI, ""],
     [0, 8, "SC", "casey", 1987, 1, "8/40", "Budai", BUDAI, ""],
