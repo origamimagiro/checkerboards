@@ -91,7 +91,7 @@ export const D = [
     [1, 4, "SC", "kirsc", 1996, 1, "4/10", "Budai", BUDAI, ""],
     [0, 8, "SC", "kirsc", 1996, 1, "8/40", "Budai", BUDAI, ""],
     [0, 8,  "C", "holle", 1997, 1, "8/32", "Budai", BUDAI, ""],
-    [0, 8,  "C", "durei", 1998, 1, "8/32", "Budai", BUDAI, ""],
+    [0, 8,  "C", "durei", 1998, 1, "8/32", "Paper", "http://hal.science/hal-01380815", ""],
     [1, 8,  "C", "schen", 2000, 1, "8/32", "Budai", BUDAI, ""],
     [0, 4, "SC", "louis", 2000, 1, "4/16", "Budai", BUDAI, ""],
     [0, 5,  "C",  "viet", 2001, 1, "5/13", "Budai", BUDAI, ""],
