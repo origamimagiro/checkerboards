@@ -33,6 +33,7 @@ const DUREI = "https://arxiv.org/pdf/1510.07499";
 export const D = [
     [1, 2,"IDSC", "none",    0, 1, "2/4", "Youtube", "https://www.youtube.com/watch?v=HqBObWb4OQA", "please let us of any earlier reference for this model"],
     [1, 2, "fC", "durei", 2015, 1, "2/2", "Paper", DUREI, "corners not fully flippable"],
+    [1, 3, "DC", "durei", 2025, 1, "3/7", "Paper", "https://hal.science/hal-05056537v1/document", ""],
     [1, 4, "FC", "durei", 2015, 1, "4/10", "Paper", DUREI, ""],
     [1, 5,  "C", "durei", 2015, 2, "5/12", "Paper", DUREI, ""],
     [0, 6, "FC", "durei", 2015, 1, "6/18", "Paper", DUREI, ""],
